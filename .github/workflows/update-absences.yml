@@ -1,0 +1,46 @@
+name: Daily player absences update
+
+# Runs daily during the build-up to and during WC 2026. Re-scrapes all 48
+# national teams from transfermarkt and commits any change to absences.json.
+# A change to src/data/* triggers Vercel auto-deploy, so the live site stays
+# current without manual intervention.
+
+on:
+  schedule:
+    # 09:00 UTC daily (≈06:00 ART). Transfermarkt updates injuries overnight
+    # in Europe; this gives the freshest data before the user typically opens
+    # the site.
+    - cron: '0 9 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Scrape all 48 teams
+        run: npm run fetch-absences -- --all
+
+      - name: Commit if changed
+        run: |
+          git config user.name 'mundial2026-bot'
+          git config user.email 'bot@users.noreply.github.com'
+          if [[ -n "$(git status --porcelain src/data/absences.json)" ]]; then
+            git add src/data/absences.json
+            git commit -m "chore(absences): daily refresh $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo 'No changes to absences.json — skipping commit.'
+          fi

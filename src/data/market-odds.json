@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "sources": [],
+    "fetched_at": "2026-05-17",
+    "note": "Empty file - odds aún no han sido recolectadas. Corré 'npm run fetch-odds' con ODDS_API_KEY o POLYMARKET_SLUG configurados para poblarlo."
+  },
+  "odds": []
+}

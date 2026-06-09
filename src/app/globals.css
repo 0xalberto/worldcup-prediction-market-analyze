@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/*
+ * Outliners brand palette (extracted from Brandbook_Outliners_2025.pdf):
+ *   #041111  bg base       deepest teal-black
+ *   #0d1916  surface 1     elevated panel
+ *   #042320  surface 2     card body
+ *   #02403b  surface 3     border / divider
+ *   #027268  brand dark    dark teal
+ *   #25a091  brand mid     (previous primary - muted)
+ *   #45e0cc  brand bright  primary accent (lifted for UI contrast on dark bg)
+ *
+ * The legacy --color-gold token is preserved as an ALIAS to the brand teal so
+ * existing `text-gold` etc. classes keep working but render in Outliners teal.
+ * --color-gold-hi / --color-gold-lo are lighter/darker variants in the teal hue.
+ */
+@theme {
+  --color-bg-0: oklch(0.13 0.013 195);  /* #041111 */
+  --color-bg-1: oklch(0.18 0.014 175);  /* #0d1916 */
+  --color-bg-2: oklch(0.23 0.022 180);  /* #042320 */
+  --color-bg-3: oklch(0.34 0.040 180);  /* #02403b */
+
+  --color-fg-0: oklch(0.97 0.005 180);
+  --color-fg-1: oklch(0.82 0.012 180);
+  --color-fg-2: oklch(0.62 0.018 180);
+  --color-fg-3: oklch(0.46 0.020 180);
+
+  /* Brand teal (replaces "gold" as the primary accent). Token name kept for
+     compatibility with existing components. */
+  --color-gold: oklch(0.76 0.13 180);     /* ~#45e0cc bright teal */
+  --color-gold-hi: oklch(0.88 0.11 180);  /* lighter teal */
+  --color-gold-lo: oklch(0.60 0.10 180);  /* dark teal for gradients */
+
+  --color-emerald: oklch(0.72 0.17 155);
+  --color-emerald-lo: oklch(0.55 0.18 155);
+  --color-rose: oklch(0.65 0.22 18);
+  --color-violet: oklch(0.65 0.20 295);
+  --color-cyan: oklch(0.75 0.13 220);
+
+  --color-border: oklch(1 0 0 / 0.06);
+  --color-border-strong: oklch(1 0 0 / 0.14);
+
+  /* Outliners brand uses Montserrat (per brandbook). Geist remains the body
+     font for legibility at small sizes; Montserrat covers display + UI accents. */
+  --font-sans: "Geist Sans", "Montserrat", system-ui, -apple-system, sans-serif;
+  --font-display: "Montserrat", "Geist Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Geist Mono", ui-monospace, monospace;
+
+  --shadow-glow-gold: 0 20px 60px -12px oklch(0.76 0.13 180 / 0.50);
+  --shadow-card: 0 1px 0 0 oklch(1 0 0 / 0.05) inset, 0 24px 64px -16px oklch(0 0 0 / 0.6);
+  --shadow-card-hover: 0 1px 0 0 oklch(1 0 0 / 0.08) inset, 0 32px 80px -16px oklch(0 0 0 / 0.7);
+
+  --radius-card: 1rem;
+  --radius-cta: 0.75rem;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg-0);
+  color: var(--color-fg-1);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-image:
+    radial-gradient(ellipse 110% 60% at 50% -10%, oklch(0.76 0.13 180 / 0.12), transparent 70%),
+    radial-gradient(ellipse 80% 50% at 85% 15%, oklch(0.60 0.10 180 / 0.09), transparent 70%);
+  background-attachment: fixed;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="submit"]:not(:disabled),
+[type="reset"]:not(:disabled),
+label[for],
+select,
+summary {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="submit"]:disabled,
+[type="reset"]:disabled {
+  cursor: not-allowed;
+}
+
+a[href] {
+  cursor: pointer;
+}
+
+/* SVG turbulence noise overlay - pinned to body, very subtle */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.04 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+/* tabular-nums by default for any element with data-num */
+[data-num],
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Selection */
+::selection {
+  background: oklch(0.76 0.13 180 / 0.35);
+  color: var(--color-fg-0);
+}
+
+/* Scrollbar (subtle) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-bg-3) transparent;
+}
+
+/* Conic gradient animated border util */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+/*
+ * The CTA's ambient glow is rendered as a separate radial-gradient div
+ * (see SimulationControls.tsx) so the falloff is elliptical, not the
+ * rectangular outline a box-shadow would always produce. Here we only
+ * pulse its opacity, never its shape.
+ */
+@keyframes halo-pulse {
+  0%, 100% { opacity: 0.70; transform: translate(-50%, -50%) scale(1); }
+  50%      { opacity: 1.00; transform: translate(-50%, -50%) scale(1.04); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-6px); }
+}
+
+/* Reduce blur on mobile for performance */
+@media (max-width: 640px) {
+  .glass { backdrop-filter: blur(10px) saturate(150%); }
+}
+@media (min-width: 641px) {
+  .glass { backdrop-filter: blur(20px) saturate(180%); }
+}
+
+.glass {
+  background: oklch(0.18 0.014 175 / 0.55);
+  border: 1px solid var(--color-border);
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

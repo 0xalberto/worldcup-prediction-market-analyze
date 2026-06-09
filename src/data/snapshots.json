@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "purpose": "Rolling log of Monte Carlo prediction snapshots for the diff view. Each entry captures probabilities at a point in time so we can show 'after match X, ARG champion prob moved 14.9% -> 18.2%'.",
+    "schema": "snapshots: chronological. Most recent last. Capped at MAX_SNAPSHOTS (50) by scripts/snapshot-run.ts.",
+    "entry": "{ id: ISO timestamp, trigger: short label, decided_matches: int, num_simulations: int, probabilities: { team_id: { champ, final, sf, qf, r16, r32, out } } }"
+  },
+  "snapshots": []
+}

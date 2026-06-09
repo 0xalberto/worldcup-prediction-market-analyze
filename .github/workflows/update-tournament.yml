@@ -1,0 +1,82 @@
+name: Live tournament update (Tier 1.5)
+
+# Runs hourly during the WC 2026 window (June 11 - July 19, 2026). Fetches
+# match results + cards from ESPN's hidden API, derives live suspensions,
+# re-runs the Monte Carlo with the collapsed state, and writes a fresh
+# snapshot. Any change to src/data/* triggers Vercel auto-deploy.
+
+on:
+  schedule:
+    # Every hour at minute 5 (top-of-hour slot has heavy GH load, +5 reduces flakes).
+    - cron: '5 * * * *'
+  workflow_dispatch:
+    inputs:
+      range:
+        description: 'Date range YYYYMMDD..YYYYMMDD (defaults to today)'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Gate to tournament window
+        id: gate
+        run: |
+          NOW=$(date -u +%Y-%m-%d)
+          if [[ "$NOW" < "2026-06-11" || "$NOW" > "2026-07-19" ]]; then
+            echo "outside-window=true" >> "$GITHUB_OUTPUT"
+            echo "Date $NOW outside 2026-06-11..2026-07-19 window — skipping."
+          else
+            echo "outside-window=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.gate.outputs.outside-window == 'false'
+        uses: actions/checkout@v4
+
+      - if: steps.gate.outputs.outside-window == 'false'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - if: steps.gate.outputs.outside-window == 'false'
+        run: npm ci
+
+      - name: Fetch results
+        if: steps.gate.outputs.outside-window == 'false'
+        run: |
+          RANGE="${{ github.event.inputs.range }}"
+          if [[ -n "$RANGE" ]]; then
+            npx tsx scripts/fetch-results.ts --range "$RANGE"
+          else
+            # Default: walk yesterday + today to catch overnight matches.
+            YDAY=$(date -u -d 'yesterday' +%Y%m%d)
+            TDAY=$(date -u +%Y%m%d)
+            npx tsx scripts/fetch-results.ts --range "$YDAY..$TDAY"
+          fi
+
+      - name: Fetch cards + derive suspensions
+        if: steps.gate.outputs.outside-window == 'false'
+        run: npx tsx scripts/fetch-cards.ts --all || echo 'cards scrape failed (non-fatal — results still committed)'
+
+      - name: Snapshot Monte Carlo
+        if: steps.gate.outputs.outside-window == 'false'
+        run: npx tsx scripts/snapshot-run.ts --n 50000
+
+      - name: Commit if changed
+        if: steps.gate.outputs.outside-window == 'false'
+        run: |
+          git config user.name 'mundial2026-bot'
+          git config user.email 'bot@users.noreply.github.com'
+          CHANGED=$(git status --porcelain src/data/tournament_state.json src/data/snapshots.json)
+          if [[ -n "$CHANGED" ]]; then
+            git add src/data/tournament_state.json src/data/snapshots.json
+            git commit -m "chore(live): tournament update $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo 'No changes — skipping commit.'
+          fi

@@ -1,0 +1,333 @@
+{
+  "_meta": {
+    "purpose": "Player absences (injuries, suspensions, federation bans) translated into team-level ELO penalties via per-player criticality scoring. See src/lib/sim/absences.ts.",
+    "schema": {
+      "criticality": "criticality = α·(minutes_qual/720) + β·(market_value_mil/150) + γ·((pos_mult-1.0)/0.5), where α+β+γ=1.0. Position multipliers: GK 1.5, CB 1.3, DM/CM 1.1, ATT 1.0.",
+      "penalty": "Per-player ELO penalty = -5 - 75·criticality. Per-team penalty = sum, capped at -150.",
+      "normalization_refs": "minutes: max 8 qualifier matches × 90 min = 720. value: global top market value reference (Mbappé/Haaland-tier ≈ 150M €). These are fixed constants so criticality is comparable across eras."
+    },
+    "fields": {
+      "player": "Player full name",
+      "position": "GK | CB | FB | DM | CM | AM | WG | ATT",
+      "minutes_qual": "Approx total minutes played in qualifying campaign (cap 720)",
+      "market_value_mil": "Transfermarkt market value in € millions at tournament start",
+      "reason": "Short note on absence cause (injury, suspension, fed ban, etc)",
+      "applies_from_stage": "Optional. If omitted, absent from group stage onwards. If set ('r16'|'qf'|'sf'|'final'|'3rd'), absent only from that stage."
+    },
+    "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
+    "compiled_at": "2026-05-17",
+    "current_updated_at": "2026-06-08T13:02:09.380Z",
+    "current_source": "transfermarkt squad pages (injury flag)"
+  },
+  "historical": {
+    "2014": {
+      "BRA": [
+        {
+          "player": "Neymar",
+          "position": "ATT",
+          "minutes_qual": 720,
+          "market_value_mil": 70,
+          "reason": "Fractured vertebra vs COL in QF",
+          "applies_from_stage": "sf"
+        }
+      ]
+    },
+    "2018": {
+      "URU": [
+        {
+          "player": "Edinson Cavani",
+          "position": "ATT",
+          "minutes_qual": 720,
+          "market_value_mil": 60,
+          "reason": "Calf injury vs POR in R16",
+          "applies_from_stage": "qf"
+        }
+      ]
+    },
+    "2022": {
+      "FRA": [
+        {
+          "player": "Karim Benzema",
+          "position": "ATT",
+          "minutes_qual": 270,
+          "market_value_mil": 25,
+          "reason": "Quad injury 2 days before tournament"
+        },
+        {
+          "player": "Paul Pogba",
+          "position": "CM",
+          "minutes_qual": 540,
+          "market_value_mil": 25,
+          "reason": "Knee surgery Sep 2022"
+        },
+        {
+          "player": "N'Golo Kanté",
+          "position": "DM",
+          "minutes_qual": 450,
+          "market_value_mil": 30,
+          "reason": "Hamstring surgery Oct 2022"
+        },
+        {
+          "player": "Presnel Kimpembe",
+          "position": "CB",
+          "minutes_qual": 270,
+          "market_value_mil": 38,
+          "reason": "Hamstring injury"
+        }
+      ],
+      "SEN": [
+        {
+          "player": "Sadio Mané",
+          "position": "ATT",
+          "minutes_qual": 720,
+          "market_value_mil": 60,
+          "reason": "Knee injury 1 week before tournament"
+        }
+      ]
+    }
+  },
+  "current": {
+    "ALG": [],
+    "ARG": [
+      {
+        "player": "Cristian Romero",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 45,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Gonzalo Montiel",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 4.5,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Nico Paz",
+        "position": "AM",
+        "minutes_qual": 0,
+        "market_value_mil": 80,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Lionel Messi",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 15,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "AUS": [],
+    "AUT": [],
+    "BEL": [
+      {
+        "player": "Zeno Debast",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 28,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "BIH": [
+      {
+        "player": "Ivan Šunjić",
+        "position": "DM",
+        "minutes_qual": 0,
+        "market_value_mil": 2,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Haris Tabakovic",
+        "position": "ATT",
+        "minutes_qual": 0,
+        "market_value_mil": 3.5,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "BRA": [
+      {
+        "player": "Neymar",
+        "position": "AM",
+        "minutes_qual": 0,
+        "market_value_mil": 8,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "CAN": [
+      {
+        "player": "Alphonso Davies",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 40,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "CIV": [
+      {
+        "player": "Evan Ndicka",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 35,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "COD": [],
+    "COL": [
+      {
+        "player": "Deiver Machado",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 1.8,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "CPV": [],
+    "CRO": [
+      {
+        "player": "Josip Sutalo",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 12,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "CUW": [],
+    "CZE": [],
+    "ECU": [],
+    "EGY": [],
+    "ENG": [],
+    "ESP": [],
+    "FRA": [],
+    "GER": [
+      {
+        "player": "Manuel Neuer",
+        "position": "GK",
+        "minutes_qual": 0,
+        "market_value_mil": 4,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "GHA": [],
+    "HAI": [],
+    "IRN": [],
+    "IRQ": [],
+    "JOR": [],
+    "JPN": [
+      {
+        "player": "Yuito Suzuki",
+        "position": "AM",
+        "minutes_qual": 0,
+        "market_value_mil": 24,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "KOR": [],
+    "KSA": [
+      {
+        "player": "Nawaf Al-Aqidi",
+        "position": "GK",
+        "minutes_qual": 0,
+        "market_value_mil": 0.65,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "MAR": [
+      {
+        "player": "Zakaria El Ouahdi",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 17,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "MEX": [],
+    "NED": [
+      {
+        "player": "Jurriën Timber",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 70,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "NOR": [],
+    "NZL": [],
+    "PAN": [
+      {
+        "player": "Luis Mejía",
+        "position": "GK",
+        "minutes_qual": 0,
+        "market_value_mil": 0.15,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "PAR": [
+      {
+        "player": "Fabián Balbuena",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 0.9,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Damián Bobadilla",
+        "position": "CM",
+        "minutes_qual": 0,
+        "market_value_mil": 6,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "POR": [],
+    "QAT": [],
+    "RSA": [],
+    "SCO": [],
+    "SEN": [
+      {
+        "player": "Kalidou Koulibaly",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 4.5,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "SUI": [],
+    "SWE": [
+      {
+        "player": "Gabriel Gudmundsson",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 20,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "TUN": [],
+    "TUR": [
+      {
+        "player": "Ferdi Kadıoğlu",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 35,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Kenan Yıldız",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 75,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "URU": [
+      {
+        "player": "Giorgian de Arrascaeta",
+        "position": "AM",
+        "minutes_qual": 0,
+        "market_value_mil": 14,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
+    "USA": [],
+    "UZB": []
+  }
+}

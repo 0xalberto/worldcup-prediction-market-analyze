@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "source": "2026 FIFA World Cup official knockout bracket",
+    "note": "R32 slots reference group positions (A1=Group A winner, B2=Group B runner-up) and '3rd' slots reference the best third-placed teams from a subset of groups. The 8 best 3rds are ranked and assigned to slots in order - a simplification of FIFA Annex C (495 cases) used by most simulators."
+  },
+  "r32": [
+    { "id": 73, "home": "A2", "away": "B2" },
+    { "id": 74, "home": "E1", "away": { "third_from": ["A", "B", "C", "D", "F"] } },
+    { "id": 75, "home": "F1", "away": "C2" },
+    { "id": 76, "home": "C1", "away": "F2" },
+    { "id": 77, "home": "I1", "away": { "third_from": ["C", "D", "F", "G", "H"] } },
+    { "id": 78, "home": "E2", "away": "I2" },
+    { "id": 79, "home": "A1", "away": { "third_from": ["C", "E", "F", "H", "I"] } },
+    { "id": 80, "home": "L1", "away": { "third_from": ["E", "H", "I", "J", "K"] } },
+    { "id": 81, "home": "D1", "away": { "third_from": ["B", "E", "F", "I", "J"] } },
+    { "id": 82, "home": "G1", "away": { "third_from": ["A", "E", "H", "I", "J"] } },
+    { "id": 83, "home": "K2", "away": "L2" },
+    { "id": 84, "home": "H1", "away": "J2" },
+    { "id": 85, "home": "B1", "away": { "third_from": ["E", "F", "G", "I", "J"] } },
+    { "id": 86, "home": "J1", "away": "H2" },
+    { "id": 87, "home": "K1", "away": { "third_from": ["D", "E", "I", "J", "L"] } },
+    { "id": 88, "home": "D2", "away": "G2" }
+  ],
+  "r16": [
+    { "id": 89,  "home": "W74", "away": "W77" },
+    { "id": 90,  "home": "W73", "away": "W75" },
+    { "id": 91,  "home": "W76", "away": "W78" },
+    { "id": 92,  "home": "W79", "away": "W80" },
+    { "id": 93,  "home": "W83", "away": "W84" },
+    { "id": 94,  "home": "W81", "away": "W82" },
+    { "id": 95,  "home": "W86", "away": "W88" },
+    { "id": 96,  "home": "W85", "away": "W87" }
+  ],
+  "qf": [
+    { "id": 97,  "home": "W89", "away": "W90" },
+    { "id": 98,  "home": "W93", "away": "W94" },
+    { "id": 99,  "home": "W91", "away": "W92" },
+    { "id": 100, "home": "W95", "away": "W96" }
+  ],
+  "sf": [
+    { "id": 101, "home": "W97", "away": "W98" },
+    { "id": 102, "home": "W99", "away": "W100" }
+  ],
+  "third_place": { "id": 103, "home": "L101", "away": "L102" },
+  "final":       { "id": 104, "home": "W101", "away": "W102" }
+}

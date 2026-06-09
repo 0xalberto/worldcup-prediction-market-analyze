@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "purpose": "Live state of the World Cup 2026 once it starts. Empty until kickoff 2026-06-11. Populated by scripts/fetch-results.ts + fetch-cards.ts running on GH Action cron. Engine reads this and short-circuits matches that already happened, then re-runs Monte Carlo on the remaining undecided ones.",
+    "schema": {
+      "results.group": "Keyed by 'LETTER:pairIdx' (e.g. 'A:0'..'L:5'). pairIdx is the GROUP_PAIRS order from src/lib/sim/group.ts.",
+      "results.knockout": "Keyed by match.id from src/data/bracket.json (73..104).",
+      "results entry": "{ stage, home, away, gh, ga, kickoff_iso, status: 'completed'|'scheduled', went_to_et?: bool, went_to_pk?: bool, pk_winner?: team_id }",
+      "live_suspensions": "Players banned for the team's next match (yellow accumulation, red, federation). Applied as absence on top of injuries in absences.json.",
+      "cards": "Per-match card log. Yellow/red accumulation is computed downstream by suspensions logic."
+    },
+    "updated_at": null,
+    "source": null,
+    "tournament_started": false
+  },
+  "results": {},
+  "live_suspensions": [],
+  "cards": []
+}

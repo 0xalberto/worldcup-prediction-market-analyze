@@ -1,0 +1,295 @@
+{
+  "_meta": {
+    "as_of": "2026-05-17",
+    "source": "Estimaciones de goal-share basadas en xG/90 y goles en selección + club temporada 2024-2026 (Transfermarkt, FBref). 'Otros' absorbe el resto del equipo. Por equipo los shares suman 1.0.",
+    "warning": "Aproximación, no modelo individual. Las shares se desactualizan rápido con lesiones, cambios de DT y ciclos de forma."
+  },
+  "ESP": [
+    { "name": "Lamine Yamal",      "share": 0.18 },
+    { "name": "Nico Williams",     "share": 0.15 },
+    { "name": "Álvaro Morata",     "share": 0.14 },
+    { "name": "Otros",             "share": 0.53 }
+  ],
+  "ARG": [
+    { "name": "Lautaro Martínez",  "share": 0.22 },
+    { "name": "Julián Álvarez",    "share": 0.20 },
+    { "name": "Lionel Messi",      "share": 0.18 },
+    { "name": "Otros",             "share": 0.40 }
+  ],
+  "FRA": [
+    { "name": "Kylian Mbappé",     "share": 0.30 },
+    { "name": "Ousmane Dembélé",   "share": 0.13 },
+    { "name": "Bradley Barcola",   "share": 0.10 },
+    { "name": "Otros",             "share": 0.47 }
+  ],
+  "BRA": [
+    { "name": "Vinícius Jr.",      "share": 0.20 },
+    { "name": "Raphinha",          "share": 0.16 },
+    { "name": "Rodrygo",           "share": 0.12 },
+    { "name": "Otros",             "share": 0.52 }
+  ],
+  "POR": [
+    { "name": "Cristiano Ronaldo", "share": 0.22 },
+    { "name": "Bruno Fernandes",   "share": 0.16 },
+    { "name": "Bernardo Silva",    "share": 0.10 },
+    { "name": "Otros",             "share": 0.52 }
+  ],
+  "ENG": [
+    { "name": "Harry Kane",        "share": 0.30 },
+    { "name": "Bukayo Saka",       "share": 0.14 },
+    { "name": "Phil Foden",        "share": 0.12 },
+    { "name": "Otros",             "share": 0.44 }
+  ],
+  "NED": [
+    { "name": "Cody Gakpo",        "share": 0.18 },
+    { "name": "Memphis Depay",     "share": 0.16 },
+    { "name": "Xavi Simons",       "share": 0.13 },
+    { "name": "Otros",             "share": 0.53 }
+  ],
+  "BEL": [
+    { "name": "Romelu Lukaku",     "share": 0.24 },
+    { "name": "Kevin De Bruyne",   "share": 0.14 },
+    { "name": "Jérémy Doku",       "share": 0.12 },
+    { "name": "Otros",             "share": 0.50 }
+  ],
+  "GER": [
+    { "name": "Florian Wirtz",     "share": 0.16 },
+    { "name": "Jamal Musiala",     "share": 0.16 },
+    { "name": "Kai Havertz",       "share": 0.14 },
+    { "name": "Otros",             "share": 0.54 }
+  ],
+  "CRO": [
+    { "name": "Andrej Kramarić",   "share": 0.18 },
+    { "name": "Bruno Petković",    "share": 0.14 },
+    { "name": "Luka Modrić",       "share": 0.10 },
+    { "name": "Otros",             "share": 0.58 }
+  ],
+  "COL": [
+    { "name": "Luis Díaz",         "share": 0.22 },
+    { "name": "James Rodríguez",   "share": 0.15 },
+    { "name": "Jhon Durán",        "share": 0.12 },
+    { "name": "Otros",             "share": 0.51 }
+  ],
+  "URU": [
+    { "name": "Darwin Núñez",      "share": 0.22 },
+    { "name": "Federico Valverde", "share": 0.13 },
+    { "name": "Maxi Araújo",       "share": 0.10 },
+    { "name": "Otros",             "share": 0.55 }
+  ],
+  "MAR": [
+    { "name": "Hakim Ziyech",      "share": 0.16 },
+    { "name": "Youssef En-Nesyri", "share": 0.16 },
+    { "name": "Brahim Díaz",       "share": 0.13 },
+    { "name": "Otros",             "share": 0.55 }
+  ],
+  "SUI": [
+    { "name": "Breel Embolo",      "share": 0.18 },
+    { "name": "Granit Xhaka",      "share": 0.12 },
+    { "name": "Xherdan Shaqiri",   "share": 0.10 },
+    { "name": "Otros",             "share": 0.60 }
+  ],
+  "SEN": [
+    { "name": "Sadio Mané",        "share": 0.22 },
+    { "name": "Nicolas Jackson",   "share": 0.15 },
+    { "name": "Iliman Ndiaye",     "share": 0.12 },
+    { "name": "Otros",             "share": 0.51 }
+  ],
+  "JPN": [
+    { "name": "Takefusa Kubo",     "share": 0.16 },
+    { "name": "Daichi Kamada",     "share": 0.13 },
+    { "name": "Kaoru Mitoma",      "share": 0.13 },
+    { "name": "Otros",             "share": 0.58 }
+  ],
+  "USA": [
+    { "name": "Christian Pulisic", "share": 0.22 },
+    { "name": "Folarin Balogun",   "share": 0.15 },
+    { "name": "Tim Weah",          "share": 0.10 },
+    { "name": "Otros",             "share": 0.53 }
+  ],
+  "MEX": [
+    { "name": "Santiago Giménez",  "share": 0.22 },
+    { "name": "Raúl Jiménez",      "share": 0.16 },
+    { "name": "Hirving Lozano",    "share": 0.12 },
+    { "name": "Otros",             "share": 0.50 }
+  ],
+  "ECU": [
+    { "name": "Enner Valencia",    "share": 0.22 },
+    { "name": "Kendry Páez",       "share": 0.12 },
+    { "name": "Gonzalo Plata",     "share": 0.11 },
+    { "name": "Otros",             "share": 0.55 }
+  ],
+  "KOR": [
+    { "name": "Son Heung-min",     "share": 0.28 },
+    { "name": "Lee Kang-in",       "share": 0.13 },
+    { "name": "Cho Gue-sung",      "share": 0.12 },
+    { "name": "Otros",             "share": 0.47 }
+  ],
+  "IRN": [
+    { "name": "Mehdi Taremi",      "share": 0.25 },
+    { "name": "Sardar Azmoun",     "share": 0.18 },
+    { "name": "Alireza Jahanbakhsh","share": 0.10 },
+    { "name": "Otros",             "share": 0.47 }
+  ],
+  "AUS": [
+    { "name": "Mitchell Duke",     "share": 0.16 },
+    { "name": "Mathew Leckie",     "share": 0.13 },
+    { "name": "Riley McGree",      "share": 0.11 },
+    { "name": "Otros",             "share": 0.60 }
+  ],
+  "EGY": [
+    { "name": "Mohamed Salah",     "share": 0.34 },
+    { "name": "Mostafa Mohamed",   "share": 0.14 },
+    { "name": "Trezeguet",         "share": 0.10 },
+    { "name": "Otros",             "share": 0.42 }
+  ],
+  "PAR": [
+    { "name": "Antonio Sanabria",  "share": 0.20 },
+    { "name": "Miguel Almirón",    "share": 0.15 },
+    { "name": "Julio Enciso",      "share": 0.12 },
+    { "name": "Otros",             "share": 0.53 }
+  ],
+  "ALG": [
+    { "name": "Riyad Mahrez",      "share": 0.22 },
+    { "name": "Islam Slimani",     "share": 0.15 },
+    { "name": "Baghdad Bounedjah", "share": 0.12 },
+    { "name": "Otros",             "share": 0.51 }
+  ],
+  "AUT": [
+    { "name": "Marko Arnautović",  "share": 0.20 },
+    { "name": "Marcel Sabitzer",   "share": 0.14 },
+    { "name": "Christoph Baumgartner","share": 0.13 },
+    { "name": "Otros",             "share": 0.53 }
+  ],
+  "TUR": [
+    { "name": "Arda Güler",        "share": 0.16 },
+    { "name": "Kenan Yıldız",      "share": 0.14 },
+    { "name": "Cenk Tosun",        "share": 0.12 },
+    { "name": "Otros",             "share": 0.58 }
+  ],
+  "CIV": [
+    { "name": "Sébastien Haller",  "share": 0.20 },
+    { "name": "Jonathan Bamba",    "share": 0.14 },
+    { "name": "Simon Adingra",     "share": 0.13 },
+    { "name": "Otros",             "share": 0.53 }
+  ],
+  "TUN": [
+    { "name": "Wahbi Khazri",      "share": 0.18 },
+    { "name": "Issam Jebali",      "share": 0.14 },
+    { "name": "Hannibal Mejbri",   "share": 0.10 },
+    { "name": "Otros",             "share": 0.58 }
+  ],
+  "NOR": [
+    { "name": "Erling Haaland",    "share": 0.42 },
+    { "name": "Martin Ødegaard",   "share": 0.14 },
+    { "name": "Alexander Sørloth", "share": 0.10 },
+    { "name": "Otros",             "share": 0.34 }
+  ],
+  "SWE": [
+    { "name": "Alexander Isak",    "share": 0.28 },
+    { "name": "Viktor Gyökeres",   "share": 0.18 },
+    { "name": "Dejan Kulusevski",  "share": 0.12 },
+    { "name": "Otros",             "share": 0.42 }
+  ],
+  "SCO": [
+    { "name": "Scott McTominay",   "share": 0.18 },
+    { "name": "Lyndon Dykes",      "share": 0.14 },
+    { "name": "Ché Adams",         "share": 0.13 },
+    { "name": "Otros",             "share": 0.55 }
+  ],
+  "CAN": [
+    { "name": "Jonathan David",    "share": 0.26 },
+    { "name": "Cyle Larin",        "share": 0.14 },
+    { "name": "Alphonso Davies",   "share": 0.10 },
+    { "name": "Otros",             "share": 0.50 }
+  ],
+  "CZE": [
+    { "name": "Patrik Schick",     "share": 0.22 },
+    { "name": "Adam Hložek",       "share": 0.13 },
+    { "name": "Tomáš Souček",      "share": 0.11 },
+    { "name": "Otros",             "share": 0.54 }
+  ],
+  "BIH": [
+    { "name": "Edin Džeko",        "share": 0.26 },
+    { "name": "Smail Prevljak",    "share": 0.13 },
+    { "name": "Ermedin Demirović", "share": 0.12 },
+    { "name": "Otros",             "share": 0.49 }
+  ],
+  "GHA": [
+    { "name": "Jordan Ayew",       "share": 0.20 },
+    { "name": "Inaki Williams",    "share": 0.16 },
+    { "name": "Kamaldeen Sulemana","share": 0.12 },
+    { "name": "Otros",             "share": 0.52 }
+  ],
+  "QAT": [
+    { "name": "Almoez Ali",        "share": 0.24 },
+    { "name": "Akram Afif",        "share": 0.18 },
+    { "name": "Hassan Al-Haydos",  "share": 0.10 },
+    { "name": "Otros",             "share": 0.48 }
+  ],
+  "KSA": [
+    { "name": "Salem Al-Dawsari",  "share": 0.22 },
+    { "name": "Saleh Al-Shehri",   "share": 0.16 },
+    { "name": "Firas Al-Buraikan", "share": 0.13 },
+    { "name": "Otros",             "share": 0.49 }
+  ],
+  "RSA": [
+    { "name": "Lyle Foster",       "share": 0.20 },
+    { "name": "Themba Zwane",      "share": 0.14 },
+    { "name": "Percy Tau",         "share": 0.13 },
+    { "name": "Otros",             "share": 0.53 }
+  ],
+  "COD": [
+    { "name": "Cédric Bakambu",    "share": 0.20 },
+    { "name": "Yoane Wissa",       "share": 0.16 },
+    { "name": "Théo Bongonda",     "share": 0.12 },
+    { "name": "Otros",             "share": 0.52 }
+  ],
+  "UZB": [
+    { "name": "Eldor Shomurodov",  "share": 0.25 },
+    { "name": "Abbosbek Fayzullaev","share": 0.13 },
+    { "name": "Jaloliddin Masharipov","share": 0.11 },
+    { "name": "Otros",             "share": 0.51 }
+  ],
+  "JOR": [
+    { "name": "Mousa Tamari",      "share": 0.22 },
+    { "name": "Yazan Al-Naimat",   "share": 0.16 },
+    { "name": "Ali Olwan",         "share": 0.12 },
+    { "name": "Otros",             "share": 0.50 }
+  ],
+  "IRQ": [
+    { "name": "Aymen Hussein",     "share": 0.22 },
+    { "name": "Mohanad Ali",       "share": 0.16 },
+    { "name": "Ali Al-Hamadi",     "share": 0.12 },
+    { "name": "Otros",             "share": 0.50 }
+  ],
+  "CPV": [
+    { "name": "Garry Rodrigues",   "share": 0.18 },
+    { "name": "Ryan Mendes",       "share": 0.14 },
+    { "name": "Bebé",              "share": 0.12 },
+    { "name": "Otros",             "share": 0.56 }
+  ],
+  "CUW": [
+    { "name": "Leandro Bacuna",    "share": 0.18 },
+    { "name": "Tahith Chong",      "share": 0.14 },
+    { "name": "Juninho Bacuna",    "share": 0.10 },
+    { "name": "Otros",             "share": 0.58 }
+  ],
+  "NZL": [
+    { "name": "Chris Wood",        "share": 0.32 },
+    { "name": "Ben Old",           "share": 0.12 },
+    { "name": "Kosta Barbarouses", "share": 0.10 },
+    { "name": "Otros",             "share": 0.46 }
+  ],
+  "PAN": [
+    { "name": "Ismael Díaz",       "share": 0.22 },
+    { "name": "José Fajardo",      "share": 0.14 },
+    { "name": "Cecilio Waterman",  "share": 0.12 },
+    { "name": "Otros",             "share": 0.52 }
+  ],
+  "HAI": [
+    { "name": "Duckens Nazon",     "share": 0.20 },
+    { "name": "Frantzdy Pierrot",  "share": 0.16 },
+    { "name": "Don Deedson Louicius","share": 0.10 },
+    { "name": "Otros",             "share": 0.54 }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "_meta": {
+    "source": "Scraped from https://www.eloratings.net/World.tsv + https://www.eloratings.net/2024.tsv",
+    "note": "ELO values are approximations of public ratings; the scrape-elo script will overwrite them with live values.",
+    "fetched_at": "2026-05-17T23:55:48.212Z"
+  },
+  "teams": [
+    {
+      "id": "ESP",
+      "name_en": "Spain",
+      "name_es": "España",
+      "flag": "es",
+      "elo": 2165,
+      "is_host": false,
+      "elo_1y_ago": 2178
+    },
+    {
+      "id": "ARG",
+      "name_en": "Argentina",
+      "name_es": "Argentina",
+      "flag": "ar",
+      "elo": 2113,
+      "is_host": false,
+      "elo_1y_ago": 2108
+    },
+    {
+      "id": "FRA",
+      "name_en": "France",
+      "name_es": "Francia",
+      "flag": "fr",
+      "elo": 2081,
+      "is_host": false,
+      "elo_1y_ago": 2055
+    },
+    {
+      "id": "BRA",
+      "name_en": "Brazil",
+      "name_es": "Brasil",
+      "flag": "br",
+      "elo": 1984,
+      "is_host": false,
+      "elo_1y_ago": 1996
+    },
+    {
+      "id": "POR",
+      "name_en": "Portugal",
+      "name_es": "Portugal",
+      "flag": "pt",
+      "elo": 1984,
+      "is_host": false,
+      "elo_1y_ago": 1993
+    },
+    {
+      "id": "ENG",
+      "name_en": "England",
+      "name_es": "Inglaterra",
+      "flag": "gb-eng",
+      "elo": 2020,
+      "is_host": false,
+      "elo_1y_ago": 2006
+    },
+    {
+      "id": "NED",
+      "name_en": "Netherlands",
+      "name_es": "Países Bajos",
+      "flag": "nl",
+      "elo": 1961,
+      "is_host": false,
+      "elo_1y_ago": 1938
+    },
+    {
+      "id": "BEL",
+      "name_en": "Belgium",
+      "name_es": "Bélgica",
+      "flag": "be",
+      "elo": 1866,
+      "is_host": false,
+      "elo_1y_ago": 1850
+    },
+    {
+      "id": "GER",
+      "name_en": "Germany",
+      "name_es": "Alemania",
+      "flag": "de",
+      "elo": 1923,
+      "is_host": false,
+      "elo_1y_ago": 1971
+    },
+    {
+      "id": "CRO",
+      "name_en": "Croatia",
+      "name_es": "Croacia",
+      "flag": "hr",
+      "elo": 1930,
+      "is_host": false,
+      "elo_1y_ago": 1886
+    },
+    {
+      "id": "COL",
+      "name_en": "Colombia",
+      "name_es": "Colombia",
+      "flag": "co",
+      "elo": 1975,
+      "is_host": false,
+      "elo_1y_ago": 1977
+    },
+    {
+      "id": "URU",
+      "name_en": "Uruguay",
+      "name_es": "Uruguay",
+      "flag": "uy",
+      "elo": 1892,
+      "is_host": false,
+      "elo_1y_ago": 1948
+    },
+    {
+      "id": "MAR",
+      "name_en": "Morocco",
+      "name_es": "Marruecos",
+      "flag": "ma",
+      "elo": 1821,
+      "is_host": false,
+      "elo_1y_ago": 1802
+    },
+    {
+      "id": "SUI",
+      "name_en": "Switzerland",
+      "name_es": "Suiza",
+      "flag": "ch",
+      "elo": 1889,
+      "is_host": false,
+      "elo_1y_ago": 1814
+    },
+    {
+      "id": "SEN",
+      "name_en": "Senegal",
+      "name_es": "Senegal",
+      "flag": "sn",
+      "elo": 1878,
+      "is_host": false,
+      "elo_1y_ago": 1771
+    },
+    {
+      "id": "JPN",
+      "name_en": "Japan",
+      "name_es": "Japón",
+      "flag": "jp",
+      "elo": 1904,
+      "is_host": false,
+      "elo_1y_ago": 1889
+    },
+    {
+      "id": "USA",
+      "name_en": "United States",
+      "name_es": "Estados Unidos",
+      "flag": "us",
+      "elo": 1721,
+      "is_host": true,
+      "elo_1y_ago": 1758
+    },
+    {
+      "id": "MEX",
+      "name_en": "Mexico",
+      "name_es": "México",
+      "flag": "mx",
+      "elo": 1858,
+      "is_host": true,
+      "elo_1y_ago": 1769
+    },
+    {
+      "id": "ECU",
+      "name_en": "Ecuador",
+      "name_es": "Ecuador",
+      "flag": "ec",
+      "elo": 1933,
+      "is_host": false,
+      "elo_1y_ago": 1910
+    },
+    {
+      "id": "KOR",
+      "name_en": "South Korea",
+      "name_es": "Corea del Sur",
+      "flag": "kr",
+      "elo": 1752,
+      "is_host": false,
+      "elo_1y_ago": 1774
+    },
+    {
+      "id": "IRN",
+      "name_en": "Iran",
+      "name_es": "Irán",
+      "flag": "ir",
+      "elo": 1760,
+      "is_host": false,
+      "elo_1y_ago": 1838
+    },
+    {
+      "id": "AUS",
+      "name_en": "Australia",
+      "name_es": "Australia",
+      "flag": "au",
+      "elo": 1783,
+      "is_host": false,
+      "elo_1y_ago": 1719
+    },
+    {
+      "id": "EGY",
+      "name_en": "Egypt",
+      "name_es": "Egipto",
+      "flag": "eg",
+      "elo": 1689,
+      "is_host": false,
+      "elo_1y_ago": 1657
+    },
+    {
+      "id": "PAR",
+      "name_en": "Paraguay",
+      "name_es": "Paraguay",
+      "flag": "py",
+      "elo": 1833,
+      "is_host": false,
+      "elo_1y_ago": 1775
+    },
+    {
+      "id": "ALG",
+      "name_en": "Algeria",
+      "name_es": "Argelia",
+      "flag": "dz",
+      "elo": 1743,
+      "is_host": false,
+      "elo_1y_ago": 1685
+    },
+    {
+      "id": "AUT",
+      "name_en": "Austria",
+      "name_es": "Austria",
+      "flag": "at",
+      "elo": 1827,
+      "is_host": false,
+      "elo_1y_ago": 1871
+    },
+    {
+      "id": "TUR",
+      "name_en": "Turkey",
+      "name_es": "Turquía",
+      "flag": "tr",
+      "elo": 1902,
+      "is_host": false,
+      "elo_1y_ago": 1774
+    },
+    {
+      "id": "CIV",
+      "name_en": "Côte d'Ivoire",
+      "name_es": "Costa de Marfil",
+      "flag": "ci",
+      "elo": 1676,
+      "is_host": false,
+      "elo_1y_ago": 1579
+    },
+    {
+      "id": "TUN",
+      "name_en": "Tunisia",
+      "name_es": "Túnez",
+      "flag": "tn",
+      "elo": 1636,
+      "is_host": false,
+      "elo_1y_ago": 1598
+    },
+    {
+      "id": "NOR",
+      "name_en": "Norway",
+      "name_es": "Noruega",
+      "flag": "no",
+      "elo": 1912,
+      "is_host": false,
+      "elo_1y_ago": 1806
+    },
+    {
+      "id": "SWE",
+      "name_en": "Sweden",
+      "name_es": "Suecia",
+      "flag": "se",
+      "elo": 1719,
+      "is_host": false,
+      "elo_1y_ago": 1744
+    },
+    {
+      "id": "SCO",
+      "name_en": "Scotland",
+      "name_es": "Escocia",
+      "flag": "gb-sct",
+      "elo": 853,
+      "is_host": false,
+      "elo_1y_ago": 859
+    },
+    {
+      "id": "CAN",
+      "name_en": "Canada",
+      "name_es": "Canadá",
+      "flag": "ca",
+      "elo": 1784,
+      "is_host": true,
+      "elo_1y_ago": 1784
+    },
+    {
+      "id": "CZE",
+      "name_en": "Czech Republic",
+      "name_es": "República Checa",
+      "flag": "cz",
+      "elo": 1726,
+      "is_host": false,
+      "elo_1y_ago": 1753
+    },
+    {
+      "id": "BIH",
+      "name_en": "Bosnia & Herzegovina",
+      "name_es": "Bosnia y Herzegovina",
+      "flag": "ba",
+      "elo": 1594,
+      "is_host": false,
+      "elo_1y_ago": 1485
+    },
+    {
+      "id": "GHA",
+      "name_en": "Ghana",
+      "name_es": "Ghana",
+      "flag": "gh",
+      "elo": 1505,
+      "is_host": false,
+      "elo_1y_ago": 1429
+    },
+    {
+      "id": "QAT",
+      "name_en": "Qatar",
+      "name_es": "Catar",
+      "flag": "qa",
+      "elo": 1425,
+      "is_host": false,
+      "elo_1y_ago": 1524
+    },
+    {
+      "id": "KSA",
+      "name_en": "Saudi Arabia",
+      "name_es": "Arabia Saudita",
+      "flag": "sa",
+      "elo": 1568,
+      "is_host": false,
+      "elo_1y_ago": 1536
+    },
+    {
+      "id": "RSA",
+      "name_en": "South Africa",
+      "name_es": "Sudáfrica",
+      "flag": "za",
+      "elo": 1524,
+      "is_host": false,
+      "elo_1y_ago": 1576
+    },
+    {
+      "id": "COD",
+      "name_en": "DR Congo",
+      "name_es": "RD del Congo",
+      "flag": "cd",
+      "elo": 1655,
+      "is_host": false,
+      "elo_1y_ago": 1540
+    },
+    {
+      "id": "UZB",
+      "name_en": "Uzbekistan",
+      "name_es": "Uzbekistán",
+      "flag": "uz",
+      "elo": 1727,
+      "is_host": false,
+      "elo_1y_ago": 1684
+    },
+    {
+      "id": "JOR",
+      "name_en": "Jordan",
+      "name_es": "Jordania",
+      "flag": "jo",
+      "elo": 1690,
+      "is_host": false,
+      "elo_1y_ago": 1617
+    },
+    {
+      "id": "IRQ",
+      "name_en": "Iraq",
+      "name_es": "Iraq",
+      "flag": "iq",
+      "elo": 1607,
+      "is_host": false,
+      "elo_1y_ago": 1584
+    },
+    {
+      "id": "CPV",
+      "name_en": "Cabo Verde",
+      "name_es": "Cabo Verde",
+      "flag": "cv",
+      "elo": 1549,
+      "is_host": false,
+      "elo_1y_ago": 1472
+    },
+    {
+      "id": "CUW",
+      "name_en": "Curaçao",
+      "name_es": "Curazao",
+      "flag": "cw",
+      "elo": 1436,
+      "is_host": false,
+      "elo_1y_ago": 1335
+    },
+    {
+      "id": "NZL",
+      "name_en": "New Zealand",
+      "name_es": "Nueva Zelanda",
+      "flag": "nz",
+      "elo": 1585,
+      "is_host": false,
+      "elo_1y_ago": 1583
+    },
+    {
+      "id": "PAN",
+      "name_en": "Panama",
+      "name_es": "Panamá",
+      "flag": "pa",
+      "elo": 1737,
+      "is_host": false,
+      "elo_1y_ago": 1726
+    },
+    {
+      "id": "HAI",
+      "name_en": "Haiti",
+      "name_es": "Haití",
+      "flag": "ht",
+      "elo": 1532,
+      "is_host": false,
+      "elo_1y_ago": 1538
+    }
+  ]
+}
