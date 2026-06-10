@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-09T11:56:10.887Z",
+    "current_updated_at": "2026-06-10T12:17:30.304Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -90,27 +90,6 @@
     "ALG": [],
     "ARG": [
       {
-        "player": "Cristian Romero",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 45,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Gonzalo Montiel",
-        "position": "FB",
-        "minutes_qual": 0,
-        "market_value_mil": 4.5,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Nico Paz",
-        "position": "AM",
-        "minutes_qual": 0,
-        "market_value_mil": 80,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
         "player": "Lionel Messi",
         "position": "WG",
         "minutes_qual": 0,
@@ -173,25 +152,9 @@
       }
     ],
     "COD": [],
-    "COL": [
-      {
-        "player": "Deiver Machado",
-        "position": "FB",
-        "minutes_qual": 0,
-        "market_value_mil": 1.8,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "COL": [],
     "CPV": [],
-    "CRO": [
-      {
-        "player": "Josip Sutalo",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 12,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "CRO": [],
     "CUW": [],
     "CZE": [],
     "ECU": [],
@@ -199,15 +162,7 @@
     "ENG": [],
     "ESP": [],
     "FRA": [],
-    "GER": [
-      {
-        "player": "Manuel Neuer",
-        "position": "GK",
-        "minutes_qual": 0,
-        "market_value_mil": 4,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "GER": [],
     "GHA": [],
     "HAI": [],
     "IRN": [],
@@ -234,20 +189,34 @@
     ],
     "MAR": [
       {
-        "player": "Zakaria El Ouahdi",
+        "player": "Anass Salah-Eddine",
         "position": "FB",
         "minutes_qual": 0,
-        "market_value_mil": 17,
+        "market_value_mil": 12,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Noussair Mazraoui",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 18,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Abde Ezzalzouli",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 40,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
     "MEX": [],
     "NED": [
       {
-        "player": "Jurriën Timber",
-        "position": "FB",
+        "player": "Bart Verbruggen",
+        "position": "GK",
         "minutes_qual": 0,
-        "market_value_mil": 70,
+        "market_value_mil": 40,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
@@ -259,6 +228,20 @@
         "position": "GK",
         "minutes_qual": 0,
         "market_value_mil": 0.15,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Aníbal Godoy",
+        "position": "DM",
+        "minutes_qual": 0,
+        "market_value_mil": 0.1,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Adalberto Carrasquilla",
+        "position": "CM",
+        "minutes_qual": 0,
+        "market_value_mil": 4,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
@@ -292,24 +275,9 @@
       }
     ],
     "SUI": [],
-    "SWE": [
-      {
-        "player": "Gabriel Gudmundsson",
-        "position": "FB",
-        "minutes_qual": 0,
-        "market_value_mil": 20,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "SWE": [],
     "TUN": [],
     "TUR": [
-      {
-        "player": "Ferdi Kadıoğlu",
-        "position": "FB",
-        "minutes_qual": 0,
-        "market_value_mil": 35,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
       {
         "player": "Kenan Yıldız",
         "position": "WG",
