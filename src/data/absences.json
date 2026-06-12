@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-11T12:39:28.619Z",
+    "current_updated_at": "2026-06-12T12:15:41.958Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -88,15 +88,7 @@
   },
   "current": {
     "ALG": [],
-    "ARG": [
-      {
-        "player": "Lionel Messi",
-        "position": "WG",
-        "minutes_qual": 0,
-        "market_value_mil": 15,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "ARG": [],
     "AUS": [],
     "AUT": [],
     "BEL": [
@@ -124,15 +116,7 @@
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "BRA": [
-      {
-        "player": "Neymar",
-        "position": "AM",
-        "minutes_qual": 0,
-        "market_value_mil": 8,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "BRA": [],
     "CAN": [
       {
         "player": "Alphonso Davies",
@@ -170,14 +154,57 @@
     "JOR": [],
     "JPN": [
       {
-        "player": "Yuito Suzuki",
-        "position": "AM",
+        "player": "Koki Machida",
+        "position": "CB",
         "minutes_qual": 0,
-        "market_value_mil": 24,
+        "market_value_mil": 10,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Wataru Endo",
+        "position": "DM",
+        "minutes_qual": 0,
+        "market_value_mil": 12,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Sho Inagaki",
+        "position": "DM",
+        "minutes_qual": 0,
+        "market_value_mil": 0.75,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Koki Kumasaka",
+        "position": "DM",
+        "minutes_qual": 0,
+        "market_value_mil": 0.125,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Kaoru Mitoma",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 45,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Takumi Minamino",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 15,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "KOR": [],
+    "KOR": [
+      {
+        "player": "Tae-hyeon Kim",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 1.2,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "KSA": [
       {
         "player": "Nawaf Al-Aqidi",
@@ -200,13 +227,6 @@
         "position": "FB",
         "minutes_qual": 0,
         "market_value_mil": 18,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Abde Ezzalzouli",
-        "position": "WG",
-        "minutes_qual": 0,
-        "market_value_mil": 40,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
