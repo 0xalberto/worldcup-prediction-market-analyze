@@ -8,7 +8,7 @@
       "live_suspensions": "Players banned for the team's next match (yellow accumulation, red, federation). Applied as absence on top of injuries in absences.json.",
       "cards": "Per-match card log. Yellow/red accumulation is computed downstream by suspensions logic."
     },
-    "updated_at": "2026-06-18T21:26:09.853Z",
+    "updated_at": "2026-06-18T23:52:58.328Z",
     "source": "site.api.espn.com fifa.world scoreboard",
     "tournament_started": true
   },
