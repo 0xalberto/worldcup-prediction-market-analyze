@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-19T12:43:41.384Z",
+    "current_updated_at": "2026-06-20T11:11:12.294Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -127,15 +127,7 @@
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "CIV": [
-      {
-        "player": "Evan Ndicka",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 35,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "CIV": [],
     "COD": [],
     "COL": [],
     "CPV": [],
@@ -151,30 +143,16 @@
       }
     ],
     "ECU": [],
-    "EGY": [
+    "EGY": [],
+    "ENG": [
       {
-        "player": "Mohamed Hamdi",
+        "player": "Tino Livramento",
         "position": "FB",
         "minutes_qual": 0,
-        "market_value_mil": 1.2,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Karim Fouad",
-        "position": "FB",
-        "minutes_qual": 0,
-        "market_value_mil": 0.6,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Islam Issa",
-        "position": "WG",
-        "minutes_qual": 0,
-        "market_value_mil": 0.35,
+        "market_value_mil": 35,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "ENG": [],
     "ESP": [],
     "FRA": [],
     "GER": [],
@@ -184,38 +162,8 @@
     "IRQ": [],
     "JOR": [],
     "JPN": [],
-    "KOR": [
-      {
-        "player": "Tae-hyeon Kim",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 1.2,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
-    "KSA": [
-      {
-        "player": "Raghed Al-Najjar",
-        "position": "GK",
-        "minutes_qual": 0,
-        "market_value_mil": 0.175,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Saad Al-Mousa",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 0.7,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Waleed Al-Ahmad",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 0.4,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "KOR": [],
+    "KSA": [],
     "MAR": [],
     "MEX": [],
     "NED": [
@@ -230,15 +178,7 @@
     "NOR": [],
     "NZL": [],
     "PAN": [],
-    "PAR": [
-      {
-        "player": "Fabián Balbuena",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 0.9,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "PAR": [],
     "POR": [],
     "QAT": [],
     "RSA": [],
