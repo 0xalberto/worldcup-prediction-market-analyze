@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-21T11:44:16.911Z",
+    "current_updated_at": "2026-06-22T14:29:03.648Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -158,18 +158,18 @@
     ],
     "ECU": [],
     "EGY": [],
-    "ENG": [
+    "ENG": [],
+    "ESP": [],
+    "FRA": [],
+    "GER": [
       {
-        "player": "Tino Livramento",
-        "position": "FB",
+        "player": "Nico Schlotterbeck",
+        "position": "CB",
         "minutes_qual": 0,
-        "market_value_mil": 35,
+        "market_value_mil": 55,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "ESP": [],
-    "FRA": [],
-    "GER": [],
     "GHA": [],
     "HAI": [],
     "IRN": [],
@@ -203,15 +203,7 @@
     "PAR": [],
     "POR": [],
     "QAT": [],
-    "RSA": [
-      {
-        "player": "Siyabonga Ngezana",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 2.2,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "RSA": [],
     "SCO": [],
     "SEN": [],
     "SUI": [],
