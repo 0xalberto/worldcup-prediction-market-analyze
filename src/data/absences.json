@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-22T14:29:03.648Z",
+    "current_updated_at": "2026-06-23T11:56:54.043Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -90,15 +90,7 @@
     "ALG": [],
     "ARG": [],
     "AUS": [],
-    "AUT": [
-      {
-        "player": "Stefan Posch",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 6,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "AUT": [],
     "BEL": [
       {
         "player": "Zeno Debast",
@@ -106,29 +98,57 @@
         "minutes_qual": 0,
         "market_value_mil": 28,
         "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Jérémy Doku",
-        "position": "WG",
-        "minutes_qual": 0,
-        "market_value_mil": 75,
-        "reason": "Injured (flagged by transfermarkt)"
       }
     ],
     "BIH": [],
     "BRA": [
       {
-        "player": "Neymar",
-        "position": "AM",
+        "player": "Éder Militão",
+        "position": "CB",
         "minutes_qual": 0,
-        "market_value_mil": 8,
+        "market_value_mil": 40,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Luciano Juba",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 3,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Wesley",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 9,
         "reason": "Injured (flagged by transfermarkt)"
       },
       {
         "player": "Raphinha",
         "position": "WG",
         "minutes_qual": 0,
-        "market_value_mil": 70,
+        "market_value_mil": 80,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Rodrygo",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 100,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Estêvão",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 50,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Vitor Roque",
+        "position": "ATT",
+        "minutes_qual": 0,
+        "market_value_mil": 20,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
@@ -141,7 +161,15 @@
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "CIV": [],
+    "CIV": [
+      {
+        "player": "Wilfried Singo",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 23,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "COD": [],
     "COL": [],
     "CPV": [],
@@ -201,11 +229,27 @@
     "NZL": [],
     "PAN": [],
     "PAR": [],
-    "POR": [],
+    "POR": [
+      {
+        "player": "Tomás Araújo",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 30,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "QAT": [],
     "RSA": [],
     "SCO": [],
-    "SEN": [],
+    "SEN": [
+      {
+        "player": "Layousse Samb",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 0,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "SUI": [],
     "SWE": [],
     "TUN": [],
