@@ -8,7 +8,7 @@
       "live_suspensions": "Players banned for the team's next match (yellow accumulation, red, federation). Applied as absence on top of injuries in absences.json.",
       "cards": "Per-match card log. Yellow/red accumulation is computed downstream by suspensions logic."
     },
-    "updated_at": "2026-06-24T00:05:33.328Z",
+    "updated_at": "2026-06-24T05:07:08.972Z",
     "source": "site.api.espn.com fifa.world scoreboard",
     "tournament_started": true
   },
@@ -478,8 +478,8 @@
       "home": "PAN",
       "away": "CRO",
       "gh": 0,
-      "ga": 0,
-      "status": "scheduled",
+      "ga": 1,
+      "status": "completed",
       "kickoff_iso": "2026-06-23T23:00Z",
       "espn_event_id": "760460"
     },
@@ -487,9 +487,9 @@
       "stage": "group",
       "home": "COL",
       "away": "COD",
-      "gh": 0,
+      "gh": 1,
       "ga": 0,
-      "status": "scheduled",
+      "status": "completed",
       "kickoff_iso": "2026-06-24T02:00Z",
       "espn_event_id": "760459"
     },
