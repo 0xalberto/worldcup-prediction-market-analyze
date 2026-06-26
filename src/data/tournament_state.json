@@ -8,7 +8,7 @@
       "live_suspensions": "Players banned for the team's next match (yellow accumulation, red, federation). Applied as absence on top of injuries in absences.json.",
       "cards": "Per-match card log. Yellow/red accumulation is computed downstream by suspensions logic."
     },
-    "updated_at": "2026-06-26T00:18:25.529Z",
+    "updated_at": "2026-06-26T05:17:14.258Z",
     "source": "site.api.espn.com fifa.world scoreboard",
     "tournament_started": true
   },
@@ -577,9 +577,9 @@
       "stage": "group",
       "home": "JPN",
       "away": "SWE",
-      "gh": 0,
-      "ga": 0,
-      "status": "scheduled",
+      "gh": 1,
+      "ga": 1,
+      "status": "completed",
       "kickoff_iso": "2026-06-25T23:00Z",
       "espn_event_id": "760471"
     },
@@ -587,9 +587,9 @@
       "stage": "group",
       "home": "TUN",
       "away": "NED",
-      "gh": 0,
-      "ga": 0,
-      "status": "scheduled",
+      "gh": 1,
+      "ga": 3,
+      "status": "completed",
       "kickoff_iso": "2026-06-25T23:00Z",
       "espn_event_id": "760472"
     },
@@ -599,7 +599,7 @@
       "away": "AUS",
       "gh": 0,
       "ga": 0,
-      "status": "scheduled",
+      "status": "completed",
       "kickoff_iso": "2026-06-26T02:00Z",
       "espn_event_id": "760469"
     },
@@ -607,9 +607,9 @@
       "stage": "group",
       "home": "TUR",
       "away": "USA",
-      "gh": 0,
-      "ga": 0,
-      "status": "scheduled",
+      "gh": 3,
+      "ga": 2,
+      "status": "completed",
       "kickoff_iso": "2026-06-26T02:00Z",
       "espn_event_id": "760470"
     },
