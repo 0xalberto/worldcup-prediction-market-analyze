@@ -8,7 +8,7 @@
       "live_suspensions": "Players banned for the team's next match (yellow accumulation, red, federation). Applied as absence on top of injuries in absences.json.",
       "cards": "Per-match card log. Yellow/red accumulation is computed downstream by suspensions logic."
     },
-    "updated_at": "2026-06-26T23:16:25.562Z",
+    "updated_at": "2026-06-27T04:10:47.412Z",
     "source": "site.api.espn.com fifa.world scoreboard",
     "tournament_started": true
   },
@@ -639,7 +639,7 @@
       "away": "KSA",
       "gh": 0,
       "ga": 0,
-      "status": "scheduled",
+      "status": "completed",
       "kickoff_iso": "2026-06-27T00:00Z",
       "espn_event_id": "760478"
     },
@@ -648,8 +648,8 @@
       "home": "URU",
       "away": "ESP",
       "gh": 0,
-      "ga": 0,
-      "status": "scheduled",
+      "ga": 1,
+      "status": "completed",
       "kickoff_iso": "2026-06-27T00:00Z",
       "espn_event_id": "760479"
     },
@@ -672,6 +672,66 @@
       "status": "scheduled",
       "kickoff_iso": "2026-06-27T03:00Z",
       "espn_event_id": "760477"
+    },
+    "L:5": {
+      "stage": "group",
+      "home": "CRO",
+      "away": "GHA",
+      "gh": 0,
+      "ga": 0,
+      "status": "scheduled",
+      "kickoff_iso": "2026-06-27T21:00Z",
+      "espn_event_id": "760480"
+    },
+    "L:4": {
+      "stage": "group",
+      "home": "PAN",
+      "away": "ENG",
+      "gh": 0,
+      "ga": 0,
+      "status": "scheduled",
+      "kickoff_iso": "2026-06-27T21:00Z",
+      "espn_event_id": "760485"
+    },
+    "K:4": {
+      "stage": "group",
+      "home": "COL",
+      "away": "POR",
+      "gh": 0,
+      "ga": 0,
+      "status": "scheduled",
+      "kickoff_iso": "2026-06-27T23:30Z",
+      "espn_event_id": "760481"
+    },
+    "K:5": {
+      "stage": "group",
+      "home": "COD",
+      "away": "UZB",
+      "gh": 0,
+      "ga": 0,
+      "status": "scheduled",
+      "kickoff_iso": "2026-06-27T23:30Z",
+      "espn_event_id": "760482"
+    },
+    "J:5": {
+      "stage": "group",
+      "home": "ALG",
+      "away": "AUT",
+      "gh": 0,
+      "ga": 0,
+      "status": "scheduled",
+      "kickoff_iso": "2026-06-28T02:00Z",
+      "espn_event_id": "760484"
+    },
+    "J:4": {
+      "stage": "group",
+      "home": "JOR",
+      "away": "ARG",
+      "gh": 0,
+      "ga": 0,
+      "status": "scheduled",
+      "kickoff_iso": "2026-06-28T02:00Z",
+      "espn_event_id": "760483"
     }
   },
   "live_suspensions": [],
