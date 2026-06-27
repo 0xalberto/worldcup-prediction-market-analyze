@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-26T11:41:57.412Z",
+    "current_updated_at": "2026-06-27T10:57:07.023Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -179,7 +179,7 @@
         "player": "Julian Ryerson",
         "position": "FB",
         "minutes_qual": 0,
-        "market_value_mil": 20,
+        "market_value_mil": 25,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
@@ -190,7 +190,15 @@
     "QAT": [],
     "RSA": [],
     "SCO": [],
-    "SEN": [],
+    "SEN": [
+      {
+        "player": "Edouard Mendy",
+        "position": "GK",
+        "minutes_qual": 0,
+        "market_value_mil": 4,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "SUI": [
       {
         "player": "Miro Muheim",
