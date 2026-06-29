@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-28T11:01:58.542Z",
+    "current_updated_at": "2026-06-29T13:00:56.244Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -158,7 +158,15 @@
     "GHA": [],
     "HAI": [],
     "IRN": [],
-    "IRQ": [],
+    "IRQ": [
+      {
+        "player": "Aymen Hussein",
+        "position": "ATT",
+        "minutes_qual": 0,
+        "market_value_mil": 0.4,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "JOR": [],
     "JPN": [
       {
@@ -174,15 +182,7 @@
     "MAR": [],
     "MEX": [],
     "NED": [],
-    "NOR": [
-      {
-        "player": "Julian Ryerson",
-        "position": "FB",
-        "minutes_qual": 0,
-        "market_value_mil": 25,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "NOR": [],
     "NZL": [],
     "PAN": [],
     "PAR": [],
@@ -213,17 +213,10 @@
     "TUR": [],
     "URU": [
       {
-        "player": "Ronald Araujo",
-        "position": "CB",
+        "player": "Manuel Ugarte",
+        "position": "DM",
         "minutes_qual": 0,
-        "market_value_mil": 20,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Giorgian de Arrascaeta",
-        "position": "AM",
-        "minutes_qual": 0,
-        "market_value_mil": 14,
+        "market_value_mil": 25,
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
