@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-29T13:00:56.244Z",
+    "current_updated_at": "2026-06-30T11:41:55.579Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -89,7 +89,43 @@
   "current": {
     "ALG": [],
     "ARG": [],
-    "AUS": [],
+    "AUS": [
+      {
+        "player": "Lewis Miller",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 0.8,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Patrick Yazbek",
+        "position": "CM",
+        "minutes_qual": 0,
+        "market_value_mil": 2,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Daniel Arzani",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 0.5,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Kusini Yengi",
+        "position": "ATT",
+        "minutes_qual": 0,
+        "market_value_mil": 0.7,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Noah Botic",
+        "position": "ATT",
+        "minutes_qual": 0,
+        "market_value_mil": 0.35,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "AUT": [],
     "BEL": [
       {
@@ -145,7 +181,15 @@
     "EGY": [],
     "ENG": [],
     "ESP": [],
-    "FRA": [],
+    "FRA": [
+      {
+        "player": "Marcus Thuram",
+        "position": "ATT",
+        "minutes_qual": 0,
+        "market_value_mil": 50,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "GER": [
       {
         "player": "Nico Schlotterbeck",
@@ -158,25 +202,9 @@
     "GHA": [],
     "HAI": [],
     "IRN": [],
-    "IRQ": [
-      {
-        "player": "Aymen Hussein",
-        "position": "ATT",
-        "minutes_qual": 0,
-        "market_value_mil": 0.4,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "IRQ": [],
     "JOR": [],
-    "JPN": [
-      {
-        "player": "Takefusa Kubo",
-        "position": "WG",
-        "minutes_qual": 0,
-        "market_value_mil": 20,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "JPN": [],
     "KOR": [],
     "KSA": [],
     "MAR": [],
