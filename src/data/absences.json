@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-06-30T11:41:55.579Z",
+    "current_updated_at": "2026-07-01T11:53:27.101Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -89,43 +89,7 @@
   "current": {
     "ALG": [],
     "ARG": [],
-    "AUS": [
-      {
-        "player": "Lewis Miller",
-        "position": "FB",
-        "minutes_qual": 0,
-        "market_value_mil": 0.8,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Patrick Yazbek",
-        "position": "CM",
-        "minutes_qual": 0,
-        "market_value_mil": 2,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Daniel Arzani",
-        "position": "WG",
-        "minutes_qual": 0,
-        "market_value_mil": 0.5,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Kusini Yengi",
-        "position": "ATT",
-        "minutes_qual": 0,
-        "market_value_mil": 0.7,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Noah Botic",
-        "position": "ATT",
-        "minutes_qual": 0,
-        "market_value_mil": 0.35,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "AUS": [],
     "AUT": [],
     "BEL": [
       {
@@ -138,6 +102,13 @@
     ],
     "BIH": [],
     "BRA": [
+      {
+        "player": "Lucas Paquetá",
+        "position": "AM",
+        "minutes_qual": 0,
+        "market_value_mil": 32,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
       {
         "player": "Raphinha",
         "position": "WG",
@@ -180,7 +151,15 @@
     "ECU": [],
     "EGY": [],
     "ENG": [],
-    "ESP": [],
+    "ESP": [
+      {
+        "player": "Nico Williams",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 40,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "FRA": [
       {
         "player": "Marcus Thuram",
@@ -236,7 +215,15 @@
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "SWE": [],
+    "SWE": [
+      {
+        "player": "Isak Hien",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 22,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "TUN": [],
     "TUR": [],
     "URU": [
