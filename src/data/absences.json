@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-07-05T11:02:01.347Z",
+    "current_updated_at": "2026-07-06T12:40:29.118Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -96,29 +96,7 @@
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "ARG": [
-      {
-        "player": "Leonardo Balerdi",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 20,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Juan Foyth",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 7.5,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Joaquín Panichelli",
-        "position": "ATT",
-        "minutes_qual": 0,
-        "market_value_mil": 0.8,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "ARG": [],
     "AUS": [
       {
         "player": "Jacob Italiano",
@@ -215,29 +193,7 @@
     "JOR": [],
     "JPN": [],
     "KOR": [],
-    "KSA": [
-      {
-        "player": "Raghed Al-Najjar",
-        "position": "GK",
-        "minutes_qual": 0,
-        "market_value_mil": 0.175,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Saad Al-Mousa",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 0.7,
-        "reason": "Injured (flagged by transfermarkt)"
-      },
-      {
-        "player": "Waleed Al-Ahmad",
-        "position": "CB",
-        "minutes_qual": 0,
-        "market_value_mil": 0.4,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "KSA": [],
     "MAR": [],
     "MEX": [],
     "NED": [],
