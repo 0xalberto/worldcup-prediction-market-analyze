@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-07-07T11:42:42.521Z",
+    "current_updated_at": "2026-07-08T10:58:44.193Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -107,7 +107,15 @@
       }
     ],
     "AUT": [],
-    "BEL": [],
+    "BEL": [
+      {
+        "player": "Amadou Onana",
+        "position": "DM",
+        "minutes_qual": 0,
+        "market_value_mil": 45,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "BIH": [],
     "BRA": [
       {
@@ -158,7 +166,22 @@
       }
     ],
     "ECU": [],
-    "EGY": [],
+    "EGY": [
+      {
+        "player": "Mohamed Abdelmonem",
+        "position": "CB",
+        "minutes_qual": 0,
+        "market_value_mil": 2.5,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Ahmed Fatouh",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 1,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "ENG": [
       {
         "player": "Jordan Henderson",
@@ -202,7 +225,15 @@
     "NZL": [],
     "PAN": [],
     "PAR": [],
-    "POR": [],
+    "POR": [
+      {
+        "player": "Nuno Mendes",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 80,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "QAT": [],
     "RSA": [],
     "SCO": [],
