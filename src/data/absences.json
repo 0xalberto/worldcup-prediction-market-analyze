@@ -16,7 +16,7 @@
     },
     "historical_note": "Historical seed restricted to OUT-FROM-START cases that are publicly documented. Partial absences (injuries mid-tournament) are noted but excluded from calibration to keep the signal clean.",
     "compiled_at": "2026-05-17",
-    "current_updated_at": "2026-07-10T11:45:37.214Z",
+    "current_updated_at": "2026-07-11T10:14:40.185Z",
     "current_source": "transfermarkt squad pages (injury flag)"
   },
   "historical": {
@@ -198,7 +198,22 @@
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "ESP": [],
+    "ESP": [
+      {
+        "player": "Fermín López",
+        "position": "AM",
+        "minutes_qual": 0,
+        "market_value_mil": 50,
+        "reason": "Injured (flagged by transfermarkt)"
+      },
+      {
+        "player": "Samu Aghehowa",
+        "position": "ATT",
+        "minutes_qual": 0,
+        "market_value_mil": 50,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "FRA": [],
     "GER": [
       {
@@ -209,7 +224,15 @@
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "GHA": [],
+    "GHA": [
+      {
+        "player": "Marvin Senaya",
+        "position": "FB",
+        "minutes_qual": 0,
+        "market_value_mil": 3,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "HAI": [],
     "IRN": [],
     "IRQ": [],
@@ -217,15 +240,7 @@
     "JPN": [],
     "KOR": [],
     "KSA": [],
-    "MAR": [
-      {
-        "player": "Ismael Saibari",
-        "position": "AM",
-        "minutes_qual": 0,
-        "market_value_mil": 40,
-        "reason": "Injured (flagged by transfermarkt)"
-      }
-    ],
+    "MAR": [],
     "MEX": [],
     "NED": [],
     "NOR": [],
@@ -289,7 +304,15 @@
         "reason": "Injured (flagged by transfermarkt)"
       }
     ],
-    "USA": [],
+    "USA": [
+      {
+        "player": "Christian Pulisic",
+        "position": "WG",
+        "minutes_qual": 0,
+        "market_value_mil": 40,
+        "reason": "Injured (flagged by transfermarkt)"
+      }
+    ],
     "UZB": []
   }
 }
